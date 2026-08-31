@@ -19,3 +19,8 @@
 *.ico binary
 *.pdf binary
 *.zip binary
+# Icon webfonts - binary, no line-ending munging
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary

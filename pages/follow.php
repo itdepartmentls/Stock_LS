@@ -18,10 +18,10 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 
     <!-- ===== Bootstrap 5 CSS ===== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
     <!-- ===== Font Awesome 6 ===== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 
     <!-- ===== Select2 CSS ===== -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
@@ -36,12 +36,12 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
     <!-- ===== ໄຟລ໌ຂອງທ່ານ ===== -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 
     <!-- icons ເພີ່ມເຕີມ -->
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="css/vendor/uicons/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="css/vendor/uicons/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="css/vendor/uicons/uicons-regular-straight.css">
 
     <title>ຕິດຕາມອຸປະກອນ</title>
     <!-- Favicon-->

@@ -86,7 +86,7 @@ function renderPrNotice($title, $message, $icon = 'fa-info-circle', $color = '#0
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/favicons.png">
     <title><?php echo htmlspecialchars($title, ENT_QUOTES, 'UTF-8'); ?></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
     <link rel="stylesheet" href="css/pages/pr_detail-notice.css">
     <style>:root { --notice-color: <?php echo $color; ?>; }</style>
 </head>
@@ -300,7 +300,7 @@ $companyAddress = $factoryAddresses[$factoryKey]['address'];
     <link rel="shortcut icon" href="image/favicons.png">
     <title>ລາຍການຂໍຊື້ PR | <?php echo e($prNumber); ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 
     <link rel="stylesheet" href="css/pages/pr_detail.css">
 </head>

@@ -12,7 +12,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 <head>
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="image/logoETL.jpg">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
@@ -27,7 +27,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 
 	<title>ລະບົບສາງ</title>
 	<!-- Favicon-->

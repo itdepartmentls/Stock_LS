@@ -156,7 +156,7 @@ function h($val)
     <title>Inbox - ລາຍການລໍຖ້າຮັບເຄື່ອງ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
     <link rel="stylesheet" href="css/pages/inbox_tacking.css">
 </head>
 

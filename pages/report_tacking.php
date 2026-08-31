@@ -276,16 +276,16 @@ if (!$isAdmin) {
 
     <!-- ===== Bootstrap 5 CSS (ຄືກັນກັບໜ້າອື່ນໆ) ===== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="css/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
+    <link rel="stylesheet" href="css/vendor/uicons/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="css/vendor/uicons/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="css/vendor/uicons/uicons-regular-straight.css">
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- ===== ໄຟລ໌ສະເພາະໜ້າ report (Tailwind + ຟອນລາວ) ===== -->

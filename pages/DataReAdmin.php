@@ -61,15 +61,15 @@ $showProvinceFilter = in_array((string)$_SESSION["iduser"], $allowedAdminIds, tr
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 	<!-- ===== Font Awesome 6 ===== -->
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    	<link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 
 	<!-- icons ເພີ່ມເຕີມ -->
-	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
-	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+	<link rel="stylesheet" href="css/vendor/uicons/uicons-solid-rounded.css">
+	<link rel="stylesheet" href="css/vendor/uicons/uicons-regular-rounded.css">
+	<link rel="stylesheet" href="css/vendor/uicons/uicons-regular-straight.css">
 
 	<script src="js/pro.min.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 
 	<title>Stock</title>
 

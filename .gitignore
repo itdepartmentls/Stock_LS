@@ -38,7 +38,7 @@ dashboard/
 *-Copy.*
 
 # === Composer / vendor (ຖ້າໃຊ້ Composer) ===
-vendor/
+/vendor/
 composer.lock
 
 # === Node modules (ຖ້າມີ) ===
