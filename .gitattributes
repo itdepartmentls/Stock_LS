@@ -1,0 +1,21 @@
+# ໃຫ້ Git ຈັດການ line ending ອັດຕະໂນມັດ ແລະ ຮັກສາເປັນ LF ສະເໝີ
+# (ແກ້ບັນຫາ "LF will be replaced by CRLF" warning)
+* text=auto eol=lf
+
+# ໄຟລ໌ PHP / ເວັບ - ບັງຄັບໃຫ້ເປັນ LF
+*.php text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# ໄຟລ໌ຮູບພາບ / binary - ບໍ່ໃຫ້ Git ຍຸ່ງກັບ line ending
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
