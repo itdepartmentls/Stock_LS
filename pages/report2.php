@@ -34,13 +34,7 @@ if ($_SESSION["user"] == "") {
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: "Phetsarath OT";
-        }
-    </style>
+    <link rel="stylesheet" href="css/pages/report2.css">
     <script type="text/javascript">
         $(document).ready(function() {
             $('.cust_id').select2();
@@ -58,59 +52,6 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     // Load jQuery library from google.
     $jqLib = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js';
     ?>
-    <style>
-        body {
-            font-family: Phetsarath OT;
-        }
-
-        /* Style the tab */
-        .tab {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current tablink class */
-        .tab button.active {
-            background-color: lightcyan;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-
-        .right {
-            float: right;
-        }
-
-        .circle {
-
-
-            border-radius: 14px;
-
-        }
-    </style>
     <?php
     $proo = $_SESSION["Namepro"];
 

@@ -42,45 +42,7 @@ function h($val)
     <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Noto Sans Lao', sans-serif;
-            background-color: #f0f2f5;
-        }
-
-        #qr-reader {
-            width: 100%;
-            max-width: 420px;
-            margin: 0 auto;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        #qr-reader video {
-            border-radius: 12px;
-        }
-
-        .item-card {
-            transition: box-shadow .15s ease;
-        }
-
-        .item-card:hover {
-            box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
-        }
-
-        .thumb-wrap {
-            width: 90px;
-            height: 90px;
-            flex-shrink: 0;
-        }
-
-        @media screen and (max-width: 640px) {
-            .thumb-wrap {
-                width: 64px;
-                height: 64px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/pages/scan_receive.css">
 </head>
 
 <body class="p-4 md:p-8">

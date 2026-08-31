@@ -69,62 +69,7 @@ function getStockImage($itemCode, $imageMap, $pictureDir, $pictureUrl, $fallback
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: "Phetsarath OT";
-        }
-
-        .navbarr {
-
-
-            position: fixed;
-
-        }
-
-        .buttonright {
-            float: right;
-        }
-
-        .buttonleft {
-            float: left;
-        }
-
-        .cooloorr {
-            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-        }
-
-        .right {
-            float: right;
-        }
-
-        .item-details {
-            line-height: 1.45;
-        }
-
-        .item-details .item-title {
-            font-size: 15px;
-            margin-bottom: 2px;
-        }
-
-        .item-details .item-line {
-            font-size: 13px;
-        }
-
-        .item-details i {
-            width: 18px;
-            color: #111;
-        }
-
-        .legacy-item-details {
-            display: none;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="css/pages/allstock.css">
 
 
 </head>

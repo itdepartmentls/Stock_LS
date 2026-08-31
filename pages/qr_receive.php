@@ -19,42 +19,7 @@ $defaultLink = 'http://localhost/receive_tacking.php?doc_no=' . urlencode($docNo
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Receive Tracking QR</title>
-<style>
-  :root { --bg:#0f172a; --card:#1e293b; --accent:#38bdf8; --ok:#22c55e; --txt:#e2e8f0; --muted:#94a3b8; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
-         background:var(--bg); color:var(--txt); min-height:100vh; display:flex;
-         align-items:center; justify-content:center; padding:24px; }
-  .card { background:var(--card); width:100%; max-width:460px; border-radius:16px;
-          padding:24px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
-  h1 { font-size:1.25rem; margin:0 0 4px; }
-  .doc { color:var(--muted); font-size:.9rem; margin-bottom:16px; word-break:break-all; }
-  label { display:block; font-size:.85rem; color:var(--muted); margin:0 0 6px; }
-  input[type=text] { width:100%; padding:11px 12px; border-radius:10px; border:1px solid #334155;
-          background:#0f172a; color:var(--txt); font-size:.95rem; margin-bottom:10px; }
-  input:focus { outline:none; border-color:var(--accent); }
-  .row { display:flex; gap:8px; }
-  .qr-wrap { display:flex; justify-content:center; margin:14px 0 6px; }
-  #qrcode { background:#fff; padding:12px; border-radius:12px; cursor:pointer;
-            transition:transform .15s ease; }
-  #qrcode:hover { transform:scale(1.02); }
-  .hint { text-align:center; color:var(--muted); font-size:.8rem; margin:4px 0 14px; }
-  .url { text-align:center; font-size:.76rem; color:var(--accent); word-break:break-all;
-         margin-bottom:14px; }
-  button { width:100%; padding:12px; border:none; border-radius:10px; font-size:.95rem;
-           font-weight:600; cursor:pointer; }
-  .btn-gen { background:var(--accent); color:#06283d; margin-bottom:4px; }
-  .btn-gen:hover { filter:brightness(1.05); }
-  .btn-copy { background:transparent; color:var(--accent); border:1px solid #334155; margin-top:8px; }
-  .section-title { font-weight:600; margin:20px 0 12px; display:flex; align-items:center; gap:8px; }
-  .section-title .badge { background:var(--accent); color:#06283d; font-size:.7rem;
-                          padding:2px 8px; border-radius:999px; font-weight:700; }
-  input.pass { margin-bottom:16px; }
-  .btn-pass { background:var(--ok); color:#052e16; }
-  .btn-pass:hover { filter:brightness(1.05); }
-  .msg { font-size:.82rem; text-align:center; min-height:1.1em; margin-top:10px; color:var(--muted); }
-  hr { border:none; border-top:1px solid #334155; margin:20px 0; }
-</style>
+<link rel="stylesheet" href="css/pages/qr_receive.css">
 </head>
 <body>
   <div class="card">
