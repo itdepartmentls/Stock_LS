@@ -73,7 +73,6 @@ function getItemImageUrl($itemCode, $imageByItemCode, $uploadsBaseDir, $uploadsB
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="js/pro.min.js">
-	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/all.min.css">
 
 	<!-- ເອົາ SweetAlert2 ອອກແລ້ວ -->

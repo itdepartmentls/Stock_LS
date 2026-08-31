@@ -69,7 +69,6 @@ $showProvinceFilter = in_array((string)$_SESSION["iduser"], $allowedAdminIds, tr
 	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
 
 	<script src="js/pro.min.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/all.min.css">
 
 	<title>Stock</title>

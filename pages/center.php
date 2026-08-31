@@ -37,7 +37,6 @@ if (!isset($_SESSION["user"]) || $_SESSION["user"] == "") {
 
     <!-- ===== ໄຟລ໌ຂອງທ່ານ ===== -->
     <link rel="stylesheet" href="js/pro.min.js">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
 
     <!-- icons ເພີ່ມເຕີມ -->

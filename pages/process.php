@@ -24,7 +24,6 @@ if ($_SESSION["user"] == "" ) {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
 	<link rel="stylesheet" href="js/pro.min.js">
-	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<title>ການດຳເນີນການ</title>
 

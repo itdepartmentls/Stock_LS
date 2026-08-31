@@ -28,7 +28,6 @@ if ($_SESSION["user"] == "") {
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="js/pro.min.js">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
 
     <title>ການລາຍງານ</title>
