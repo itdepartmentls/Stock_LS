@@ -1,0 +1,10 @@
+# Block direct access to sensitive/non-web files (dotfiles like .env, and backup/dump extensions)
+<FilesMatch "(^\.|\.sql$|\.rar$|\.zip$|\.bak$|\.log$)">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

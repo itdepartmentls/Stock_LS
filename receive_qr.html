@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receive Tracking — QR &amp; Login</title>
+<style>
+  :root { --primary:#4f46e5; --primary-hover:#4338ca; --border:#e5e7eb; --text:#1f2937; --muted:#6b7280; --bg1:#6366f1; --bg2:#8b5cf6; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Kanit","Segoe UI",Tahoma,sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:linear-gradient(135deg,var(--bg1),var(--bg2)); padding:20px; color:var(--text); }
+  .card { width:100%; max-width:460px; background:#fff; border-radius:20px; padding:30px 26px; box-shadow:0 20px 60px rgba(0,0,0,.25); }
+  h2 { font-size:22px; text-align:center; margin-bottom:4px; }
+  .sub { text-align:center; color:var(--muted); font-size:13px; margin-bottom:20px; }
+  .form-group { margin-bottom:16px; }
+  label { display:block; margin-bottom:6px; font-size:14px; font-weight:500; }
+  input, select { width:100%; height:44px; padding:8px 12px; font-size:15px; border:1.5px solid var(--border); border-radius:10px; background:#fff; }
+  input:focus, select:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 4px rgba(79,70,229,.12); }
+  .qr-box { text-align:center; padding:14px; background:#f9fafb; border:1.5px dashed var(--border); border-radius:12px; margin-bottom:10px; }
+  .qr-box img { max-width:100%; height:auto; }
+  .url-line { text-align:center; font-size:12px; color:var(--muted); word-break:break-all; margin-bottom:16px; }
+  .url-line a { color:var(--primary); text-decoration:none; }
+  .btn { width:100%; height:46px; border:none; border-radius:12px; font-size:16px; font-weight:500; cursor:pointer; background:var(--primary); color:#fff; }
+  .btn:hover { background:var(--primary-hover); }
+  .hint { font-size:12px; color:var(--muted); margin-top:14px; line-height:1.5; background:#eef2ff; padding:10px 12px; border-radius:10px; }
+  .hint b { color:var(--text); }
+  hr { border:none; border-top:1px solid var(--border); margin:22px 0; }
+  .direct { text-align:center; font-size:13px; margin-top:12px; }
+  .direct a { color:var(--primary); text-decoration:none; font-weight:500; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>Receive Tracking</h2>
+  <div class="sub">Scan to log in and open the document</div>
+
+  <div class="form-group">
+    <label for="docNo">Document No.</label>
+    <input id="docNo" type="text" value="GR-16072026-0009">
+  </div>
+
+  <div class="form-group">
+    <label for="serverBase">Server address (use your LAN IP so phones can scan)</label>
+    <input id="serverBase" type="text" placeholder="http://192.168.13.8">
+  </div>
+
+  <div class="form-group">
+    <label for="qrTarget">QR encodes</label>
+    <select id="qrTarget">
+      <option value="landing" selected>Landing page (login &rarr; document)</option>
+      <option value="doc">Document URL directly (http://…/receive_tacking.php)</option>
+    </select>
+  </div>
+
+  <div class="qr-box"><div id="qr"></div></div>
+  <div class="url-line" id="qrUrl"></div>
+
+  <hr>
+
+  <form id="loginForm" action="check.php" method="post" autocomplete="off">
+    <input type="hidden" name="return" id="returnField">
+    <div class="form-group">
+      <label for="user">Username</label>
+      <input id="user" name="user" type="text" placeholder="Username" required>
+    </div>
+    <div class="form-group">
+      <label for="pass">Password</label>
+      <input id="pass" name="pass" type="password" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn">Login &amp; open document</button>
+  </form>
+
+  <div class="direct"><a id="directLink" href="#" target="_blank">Open document directly</a> (if already logged in)</div>
+
+  <div class="hint">
+    <b>How it works:</b> Open this page on your PC via <b>http://192.168.13.8/receive_qr.html</b>
+    (not <i>localhost</i>), then scan the QR with a phone on the same Wi‑Fi. The phone shows this login,
+    and after logging in it goes straight to the document.
+  </div>
+</div>
+
+<script src="qrcode.js"></script>
+<script>
+  function buildUrls() {
+    var docNo   = document.getElementById('docNo').value.trim();
+    var base    = document.getElementById('serverBase').value.trim().replace(/\/+$/, '');
+    var docUrl  = base + '/receive_tacking.php?doc_no=' + encodeURIComponent(docNo);
+    var landing = base + '/receive_qr.html?doc_no=' + encodeURIComponent(docNo);
+
+    var target = document.getElementById('qrTarget').value;
+    var qrText = (target === 'doc') ? docUrl : landing;
+
+    renderQr(qrText);
+    document.getElementById('qrUrl').innerHTML = 'Scan: <a href="' + qrText + '" target="_blank">' + qrText + '</a>';
+    document.getElementById('returnField').value = 'receive_tacking.php?doc_no=' + encodeURIComponent(docNo);
+    document.getElementById('directLink').href = docUrl;
+  }
+
+  function renderQr(text) {
+    var qr = qrcode(0, 'M');   // typeNumber 0 = auto-size
+    qr.addData(text);
+    qr.make();
+    document.getElementById('qr').innerHTML = qr.createImgTag(5, 8);
+  }
+
+  ['docNo', 'serverBase', 'qrTarget'].forEach(function (id) {
+    document.getElementById(id).addEventListener('input', buildUrls);
+    document.getElementById(id).addEventListener('change', buildUrls);
+  });
+
+  // Default the server address to wherever this page is opened from.
+  // For phone scanning, change it to your PC's LAN IP (e.g. http://192.168.13.8).
+  document.getElementById('serverBase').value = window.location.origin;
+  buildUrls();
+</script>
+</body>
+</html>
