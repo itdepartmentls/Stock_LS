@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/conn.php';
+require_once __DIR__ . '/../includes/conn.php';
 @session_start();
 
 header('Content-Type: application/json; charset=utf-8');
@@ -17,7 +17,7 @@ $isMainStock = in_array($warehouse, ['Stock Sanakham', 'Stock_HQ'], true);
 // ===== ໂຫຼດ filemap ຮູບພາບ (picture/uploads/filemap.json) =====
 // filemap.json ເກັບເປັນ { safeFileName: displayName }, ໂດຍ displayName ຈະຕົງກັບ Item_code
 // ສ້າງ map ກັບກັນ (Item_code -> safeFileName) ເພື່ອຄົ້ນຫາໄວ
-$imageBaseDir = __DIR__ . '/picture/uploads/';
+$imageBaseDir = __DIR__ . '/../picture/uploads/';
 $imageBaseUrl = 'picture/uploads/';
 $itemCodeToImage = [];
 $mapPath = $imageBaseDir . 'filemap.json';

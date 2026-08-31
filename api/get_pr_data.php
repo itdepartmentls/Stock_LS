@@ -123,7 +123,7 @@ if (strcasecmp($myFactory, 'HQ') !== 0) {
     sendJson(array('status' => 'error', 'message' => 'ໜ້ານີ້ສະເພາະບັນຊີ HQ ເທົ່ານັ້ນ'));
 }
 
-require_once __DIR__ . '/includes/conn.php';
+require_once __DIR__ . '/../includes/conn.php';
 /** @var mysqli $conn */
 
 $action = isset($_GET['action']) ? trim($_GET['action']) : '';

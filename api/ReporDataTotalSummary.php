@@ -38,7 +38,7 @@
  *
  * ============= CONFIG: ປັບບ່ອນນີ້ຖ້າ path/ໂຄງສ້າງໄຟລ໌ຮູບຕ່າງອອກໄປ =============
  */
-const PICTURE_UPLOAD_DIR  = __DIR__ . '/picture/uploads/';   // ໂຟນເດີເກັບໄຟລ໌ຮູບ (ຝັ່ງ server/filesystem)
+const PICTURE_UPLOAD_DIR  = __DIR__ . '/../picture/uploads/';   // ໂຟນເດີເກັບໄຟລ໌ຮູບ (ຝັ່ງ server/filesystem)
 const PICTURE_MAP_FILE    = PICTURE_UPLOAD_DIR . 'filemap.json'; // safeName => Item_code
 const PICTURE_IMAGE_BASE  = 'picture/uploads/';               // path ທີ່ໃຊ້ຕໍ່ໜ້າຊື່ໄຟລ໌ ຕອນສ້າງ URL ໃຫ້ browser
 
@@ -53,7 +53,7 @@ const PROVINCE_TO_FACTORY_MAP = [
 ];
 /* ======================================================================== */
 
-require_once __DIR__ . '/includes/conn.php';
+require_once __DIR__ . '/../includes/conn.php';
 @session_start();
 
 header('Content-Type: application/json; charset=utf-8');

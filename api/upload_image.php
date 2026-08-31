@@ -60,7 +60,7 @@ if (@getimagesize($file['tmp_name']) === false) {
 // ໂຟນເດີ 'uploads/' (ບໍ່ແມ່ນ 'picture/uploads/') — ແຍກຕ່າງຫາກ
 // ຈາກຮູບສິນຄ້າ/ລາຍເຊັນເກົ່າ ເພື່ອບໍ່ໃຫ້ຊື່ໄຟລ໌ຊ້ຳກັນ ຫຼືປົນກັນ
 // -----------------------------------------------------------
-$uploadDir = __DIR__ . '/uploads/';
+$uploadDir = __DIR__ . '/../uploads/';
 if (!is_dir($uploadDir)) {
     mkdir($uploadDir, 0755, true);
 }

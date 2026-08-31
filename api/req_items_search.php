@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/conn.php';
+require_once __DIR__ . '/../includes/conn.php';
 @session_start();
 
 header('Content-Type: application/json; charset=utf-8');
@@ -17,7 +17,7 @@ $provSession = $_SESSION['Namepro'];
 // ດຶງຮູບພາບຈາກ Item_code ຜ່ານ filemap.json (ຄືກັນກັບ logic ໃນ ReQ.php)
 // ໝາຍເຫດ: index.php/upload.php ຢູ່ໃນໂຟນເດີ picture/ ບໍ່ແມ່ນ root
 // =========================================================
-$uploadsBaseDir = __DIR__ . '/picture/uploads';
+$uploadsBaseDir = __DIR__ . '/../picture/uploads';
 $uploadsBaseUrl = 'picture/uploads';
 
 $imageByItemCode = [];
