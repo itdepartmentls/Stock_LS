@@ -15,6 +15,7 @@ config/database.php
 .env
 conn/db1.php
 phpinfo.php
+picture/cleanup_duplicates.php
 
 # === Logs ===
 *.log
