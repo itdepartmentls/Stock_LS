@@ -11,8 +11,8 @@
 //   ?view=request   -> ຂໍ້ມູນຈາກຕາຕະລາງ request (ຍອດຂໍເບິກ, column: Province ບໍ່ມີ s)
 //                      ຮອງຮັບ &province=ຊື່ແຂວງ ເພື່ອກັ່ນຕອງເພີ່ມ
 // ===========================================================================
-require_once __DIR__ . '/conn.php';
-require_once __DIR__ . '/stock_dashboard_lib.php';
+require_once __DIR__ . '/includes/conn.php';
+require_once __DIR__ . '/includes/stock_dashboard_lib.php';
 @session_start();
 
 header('Content-Type: application/json; charset=utf-8');

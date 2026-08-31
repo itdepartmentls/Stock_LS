@@ -16,7 +16,7 @@ if ($_SESSION["user"] == "" or $_SESSION["Namepro"] == "" or $_SESSION["iduser"]
 
 $myFactory = isset($_SESSION["factory"]) ? trim($_SESSION["factory"]) : '';
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 $doc_no_GR = isset($_GET['doc_no_GR']) ? trim($_GET['doc_no_GR']) : '';
 $docprint  = isset($_GET['doc_print'])  ? trim($_GET['doc_print'])  : '';
 

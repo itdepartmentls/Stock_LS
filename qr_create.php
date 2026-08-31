@@ -3,7 +3,7 @@
 // Enter a link, preview its QR code live, and SAVE it to the qr_links table.
 // After saving you get a view link (qr_view.php?id=NNN) you can use in Step 3.
 
-require_once __DIR__ . '/inc_qr.php';
+require_once __DIR__ . '/includes/inc_qr.php';
 
 $message   = '';
 $msgClass  = '';

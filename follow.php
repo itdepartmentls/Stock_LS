@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 @session_start();
 if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"] == "") {
 	echo "<script>window.location = 'index.php';</script>";
@@ -517,7 +517,7 @@ WHERE a.S_Status = '1'
     <div class="d-flex" id="wrapper">
         <!-- ===== Sidebar ===== -->
         <div class="border-end" id="sidebar-wrapper">
-            <?php include __DIR__ . '/sidebar.php'; ?>
+            <?php include __DIR__ . '/includes/sidebar.php'; ?>
         </div>
 
         <!-- ===== Page content wrapper ===== -->

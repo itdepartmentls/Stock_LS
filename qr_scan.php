@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_destroy();
     session_start();
 
-    require_once __DIR__ . '/conn.php';
+    require_once __DIR__ . '/includes/conn.php';
 
     // Parse credentials out of the scanned string (URL or raw query string).
     $data = (string) ($_POST['data'] ?? '');

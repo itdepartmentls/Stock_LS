@@ -20,7 +20,7 @@ if (empty($_SESSION["user"]) or empty($_SESSION["Namepro"]) or empty($_SESSION["
 
 $myFactory = isset($_SESSION["factory"]) ? trim($_SESSION["factory"]) : '';
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 /** @var mysqli $conn */
 
 // -------------------------------------------------------------------

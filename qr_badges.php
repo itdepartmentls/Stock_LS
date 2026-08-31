@@ -9,7 +9,7 @@
 // the behavior you chose (QR = username + password). If you later want a safer
 // "badge only" model, switch the QR to encode just the username.
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 
 $sql = "SELECT
             sod_users.id,

@@ -178,7 +178,7 @@
 
         <?php
         // Include the existing connection configuration
-        require_once __DIR__ . '/conn.php';
+        require_once __DIR__ . '/includes/conn.php';
 
         // Fetch purchase requests from database (using 'request' table)
         $prData = [];

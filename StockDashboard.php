@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/conn.php';
-require_once __DIR__ . '/stock_dashboard_lib.php';
+require_once __DIR__ . '/includes/conn.php';
+require_once __DIR__ . '/includes/stock_dashboard_lib.php';
 @session_start();
 if ($_SESSION["user"] == "" or $_SESSION["Namepro"] == "" or $_SESSION["iduser"] == "") {
     echo "<script>window.location = 'index.php';</script>";
@@ -897,7 +897,7 @@ function navActive($page, $currentPage) {
 	<div class="d-flex" id="wrapper">
 		<!-- ===== Sidebar ສີຂຽວ ===== -->
 		<div class="border-end" id="sidebar-wrapper">
-			<?php include __DIR__ . '/sidebar.php'; ?>
+			<?php include __DIR__ . '/includes/sidebar.php'; ?>
 		</div>
     <!-- <div class="d-flex" id="wrapper"> -->
 

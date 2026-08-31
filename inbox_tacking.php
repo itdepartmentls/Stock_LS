@@ -28,7 +28,7 @@ if (strcasecmp($myFactory, 'HQ') === 0) {
     exit;
 }
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 
 if ($myFactory === '') {
     // user ນີ້ຍັງບໍ່ໄດ້ຖືກກຳນົດໃຫ້ໂຮງງານໃດ -> ແຈ້ງເຕືອນ ແລະ ຢຸດ

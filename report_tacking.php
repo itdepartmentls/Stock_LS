@@ -696,7 +696,7 @@ if (!$isAdmin) {
     <div class="d-flex" id="wrapper">
         <!-- ===== Sidebar ===== -->
         <div class="border-end" id="sidebar-wrapper">
-            <?php include __DIR__ . '/sidebar.php'; ?>
+            <?php include __DIR__ . '/includes/sidebar.php'; ?>
         </div>
 
         <!-- ===== Page content wrapper ===== -->

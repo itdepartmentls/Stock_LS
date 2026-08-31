@@ -757,7 +757,7 @@ if ($editData) {
 
     <div class="d-flex" id="wrapper">
         <!-- ===== Sidebar (ລວມສູນ, ໃຊ້ຮ່ວມກັນທຸກໜ້າ) ===== -->
-        <?php include __DIR__ . '/sidebar.php'; ?>
+        <?php include __DIR__ . '/includes/sidebar.php'; ?>
         <?php
         // ---- ປິດ connection ຫຼັງ sidebar.php ໃຊ້ແລ້ວ (ບໍ່ໃຊ້ $conn ຕໍ່ໃນສ່ວນ HTML ທີ່ເຫຼືອ) ----
         $conn->close();

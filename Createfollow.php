@@ -5,7 +5,7 @@ if ($_SESSION["user"] == "" or $_SESSION["Namepro"] == "") {
 	exit;
 }
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 
 // PHP 8: ໃຊ້ Null Coalescing Operator
 $proo = $_SESSION["Namepro"] ?? '';

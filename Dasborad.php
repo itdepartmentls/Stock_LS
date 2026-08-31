@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 @session_start();
 if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"] == "") {
     echo "<script>window.location = 'index.php';</script>";
@@ -9,7 +9,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 
 // ✅ ຕ້ອງເອີ້ນຫຼັງຈາກ conn.php ແລະ session_start() ແລ້ວເທົ່ານັ້ນ
 // (getPendingTackingCount ຕ້ອງການ $conn ແລະ $_SESSION["factory"])
-require_once __DIR__ . '/inbox_pending_count.php';
+require_once __DIR__ . '/includes/inbox_pending_count.php';
 $pendingCount = getPendingTackingCount($conn, trim($_SESSION["factory"] ?? ''));
 ?>
 <!DOCTYPE html>
@@ -594,7 +594,7 @@ $pendingCount = getPendingTackingCount($conn, trim($_SESSION["factory"] ?? ''));
     <div class="d-flex" id="wrapper">
         <!-- ===== Sidebar ສີຂຽວຈ້າງ + Logo ໃຫຍ່ ===== -->
         <div class="border-end" id="sidebar-wrapper">
-            <?php include __DIR__ . '/sidebar.php'; ?>
+            <?php include __DIR__ . '/includes/sidebar.php'; ?>
         </div>
 
         <!-- ===== Page content wrapper ===== -->

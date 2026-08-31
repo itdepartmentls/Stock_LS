@@ -27,7 +27,7 @@ set_error_handler(function ($errno, $errstr) {
     throw new ErrorException($errstr, 0, $errno);
 });
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 
 if (function_exists('mysqli_report')) {
     mysqli_report(MYSQLI_REPORT_OFF);

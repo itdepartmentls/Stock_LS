@@ -2,7 +2,7 @@
 date_default_timezone_set("Asia/Bangkok");
 
 require_once __DIR__ . '/inc_env.php';
-env_load(__DIR__ . '/.env');
+env_load(__DIR__ . '/../.env');
 
 $dbHost = env('DB_HOST', 'localhost');
 $dbPort = (int) env('DB_PORT', 3307);

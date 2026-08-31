@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 @session_start();
 if ($_SESSION["user"] == "" or $_SESSION["iduser"] == "") {
     echo "<script>window.location = 'index.php';</script>";
@@ -54,7 +54,7 @@ function getStockImage($itemCode, $imageMap, $pictureDir, $pictureUrl, $fallback
 
 <head>
     <link rel="shortcut icon" href="image/logoETL.jpg">
-    <?php include __DIR__ . '/head_cdn.php'; ?>
+    <?php include __DIR__ . '/includes/head_cdn.php'; ?>
 
     <title>ສາງອຸປະກອນ</title>
 

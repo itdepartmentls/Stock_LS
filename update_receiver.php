@@ -13,7 +13,7 @@ if (empty($_SESSION["user"])) {
 
 $myFactory = isset($_SESSION["factory"]) ? trim($_SESSION["factory"]) : '';
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 /** @var mysqli $conn */
 
 // ຮັບຄ່າຈາກທັງສອງແຫຼ່ງ

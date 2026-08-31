@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 @session_start();
 if (!isset($_SESSION["user"]) || $_SESSION["user"] == "") {
     echo "<script>window.location = 'index.php';</script>";
@@ -12,7 +12,7 @@ if (!isset($_SESSION["user"]) || $_SESSION["user"] == "") {
 
 <head>
 	<link rel="shortcut icon" href="image/logoETL.jpg">
-	<?php include __DIR__ . '/head_cdn.php'; ?>
+	<?php include __DIR__ . '/includes/head_cdn.php'; ?>
 	<title>ສາງອຸປະກອນ</title>
 
 	<style type="text/css">

@@ -53,7 +53,7 @@ const PROVINCE_TO_FACTORY_MAP = [
 ];
 /* ======================================================================== */
 
-require_once __DIR__ . '/conn.php';
+require_once __DIR__ . '/includes/conn.php';
 @session_start();
 
 header('Content-Type: application/json; charset=utf-8');

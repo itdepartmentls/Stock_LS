@@ -484,7 +484,7 @@ if (!isset($_SESSION["user"]) || $_SESSION["user"] == "") {
     </script>
 
     <?php
-    require_once __DIR__ . '/conn.php';
+    require_once __DIR__ . '/includes/conn.php';
 
     $proo = $_SESSION["Namepro"] ?? '';
     $userId = $_SESSION["iduser"] ?? '';
@@ -635,7 +635,7 @@ WHERE a.User_TMD <> '' and Date_Goto is null
                         </thead>
                         <tbody>
                         <?php
-                        require_once __DIR__ . '/conn.php';
+                        require_once __DIR__ . '/includes/conn.php';
                         $Province = $_SESSION["Namepro"];
 
                         if ($_SESSION["iduser"] == "51" or $_SESSION["iduser"] == "1" or $_SESSION["iduser"] == "404" or $_SESSION["iduser"] == "43") {
@@ -709,7 +709,7 @@ ORDER BY followequment.Date desc ";
                         </thead>
                         <tbody>
                             <?php
-                            require_once __DIR__ . '/conn.php';
+                            require_once __DIR__ . '/includes/conn.php';
                             $Province = $_SESSION["Namepro"];
 
                             if ($_SESSION["iduser"] == '51' or  $_SESSION["iduser"] == '1' or $_SESSION["iduser"] == '404' or $_SESSION["iduser"] == '43' or $_SESSION["iduser"] == '41' or $_SESSION["iduser"] == '378' or $_SESSION["iduser"] == '387' or $_SESSION["iduser"] == '514' or $_SESSION["iduser"] == '423' or $_SESSION["iduser"] == '166' or $_SESSION["iduser"] == '167' or $_SESSION["iduser"] == '168' or $_SESSION["iduser"] == '624' or $_SESSION["iduser"] == '190' or $_SESSION["iduser"] == '197' or $_SESSION["iduser"] == '718' or $_SESSION["iduser"] == '816' or $_SESSION["iduser"] == '835' or $_SESSION["iduser"] == '836' or $_SESSION["iduser"] == '837' or $_SESSION["iduser"] == '177' or $_SESSION["iduser"] == '180' or $_SESSION["iduser"] == '181' or $_SESSION["iduser"] == '487' or $_SESSION["iduser"] == '686') {
@@ -788,7 +788,7 @@ limit 50";
                         </thead>
                         <tbody>
                             <?php
-                            require_once __DIR__ . '/conn.php';
+                            require_once __DIR__ . '/includes/conn.php';
                             $Province = $_SESSION["Namepro"];
 
                             if ($_SESSION["iduser"] == '51' or  $_SESSION["iduser"] == '1' or $_SESSION["iduser"] == '404' or $_SESSION["iduser"] == '43' or $_SESSION["iduser"] == '41' or $_SESSION["iduser"] == '378' or $_SESSION["iduser"] == '387' or $_SESSION["iduser"] == '514' or $_SESSION["iduser"] == '423' or $_SESSION["iduser"] == '166' or $_SESSION["iduser"] == '167' or $_SESSION["iduser"] == '168' or $_SESSION["iduser"] == '624' or $_SESSION["iduser"] == '190' or $_SESSION["iduser"] == '197' or $_SESSION["iduser"] == '718' or $_SESSION["iduser"] == '816' or $_SESSION["iduser"] == '835' or $_SESSION["iduser"] == '836' or $_SESSION["iduser"] == '837' or $_SESSION["iduser"] == '177' or $_SESSION["iduser"] == '180' or $_SESSION["iduser"] == '181' or $_SESSION["iduser"] == '487' or $_SESSION["iduser"] == '686') {
@@ -866,7 +866,7 @@ limit 20";
                         </thead>
                         <tbody>
                             <?php
-                            require_once __DIR__ . '/conn.php';
+                            require_once __DIR__ . '/includes/conn.php';
                             $Province = $_SESSION["Namepro"];
 
                             if ($_SESSION["iduser"] == '51' or  $_SESSION["iduser"] == '1' or $_SESSION["iduser"] == '404' or $_SESSION["iduser"] == '43' or $_SESSION["iduser"] == '41' or $_SESSION["iduser"] == '378' or $_SESSION["iduser"] == '387' or $_SESSION["iduser"] == '514' or $_SESSION["iduser"] == '423' or $_SESSION["iduser"] == '166' or $_SESSION["iduser"] == '167' or $_SESSION["iduser"] == '168' or $_SESSION["iduser"] == '624' or $_SESSION["iduser"] == '190' or $_SESSION["iduser"] == '197' or $_SESSION["iduser"] == '718' or $_SESSION["iduser"] == '816' or $_SESSION["iduser"] == '835' or $_SESSION["iduser"] == '836' or $_SESSION["iduser"] == '837' or $_SESSION["iduser"] == '177' or $_SESSION["iduser"] == '180' or $_SESSION["iduser"] == '181' or $_SESSION["iduser"] == '487' or $_SESSION["iduser"] == '686') {
