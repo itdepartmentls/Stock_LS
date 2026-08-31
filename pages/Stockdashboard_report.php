@@ -56,7 +56,6 @@ function navActive($page, $currentPage) {
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 
     <!-- ===== ໄຟລ໌ຂອງທ່ານ ===== -->
-	<link rel="stylesheet" href="js/pro.min.js">
 	<link rel="stylesheet" href="css/all.min.css">
 
     <!-- icons ເພີ່ມເຕີມ -->

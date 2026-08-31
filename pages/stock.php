@@ -34,7 +34,6 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
 	<!-- ===== ໄຟລ໌ຂອງທ່ານ ===== -->
-	<link rel="stylesheet" href="js/pro.min.js">
 	<link rel="stylesheet" href="css/all.min.css">
 
 	<!-- icons ເພີ່ມເຕີມ -->
