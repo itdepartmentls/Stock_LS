@@ -20,7 +20,7 @@ if (strcasecmp($myFactory, 'HQ') !== 0) {
     die("ໜ້ານີ້ສະເພາະບັນຊີ HQ ເທົ່ານັ້ນ");
 }
 
-require_once 'conn.php';
+require_once __DIR__ . '/includes/conn.php';
 /** @var mysqli $conn */
 
 // ---- ຫ້າມ browser/proxy cache ໜ້ານີ້ (ໜ້າ dynamic ທີ່ຂຶ້ນກັບ ?edit=... ຕ້ອງໂຫລດໃໝ່ທຸກຄັ້ງ) ----

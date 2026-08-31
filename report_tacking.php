@@ -15,7 +15,7 @@ if ($_SESSION["user"] == "" or $_SESSION["Namepro"] == "" or $_SESSION["iduser"]
     exit;
 }
 
-require_once 'conn.php';
+require_once __DIR__ . '/includes/conn.php';
 /** @var mysqli $conn */
 
 // ---- 1. ດຶງຂໍ້ມູນທັງໝົດຈາກຕາຕະລາງ (ຮຽງລ້າສຸດກ່ອນ) ----
