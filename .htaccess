@@ -8,3 +8,40 @@
         Deny from all
     </IfModule>
 </FilesMatch>
+
+# ---------------------------------------------------------------------------
+# Backwards-compatibility routing for the folder restructure.
+#
+# Historically every page lived at the web root (e.g. /Stock_LS/stock.php).
+# They now live in pages/, api/ and export/. These rules keep every old
+# flat URL working - bookmarks, printed QR codes, and any inter-page link
+# we did not rewrite - by transparently locating the file in a subfolder.
+#
+# DEPLOY NOTE: the base path below is "/Stock_LS/" (XAMPP dev). If this app
+# is served from the domain root in production, change RewriteBase to "/"
+# and the two "/Stock_LS/" prefixes in the last rule to "/".
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /Stock_LS/
+
+    # 1) Flat legacy URL -> real location in pages/ | api/ | export/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/Stock_LS/pages/$1 -f
+    RewriteRule ^([A-Za-z0-9._-]+\.php)$ pages/$1 [L,QSA]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/Stock_LS/api/$1 -f
+    RewriteRule ^([A-Za-z0-9._-]+\.php)$ api/$1 [L,QSA]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/Stock_LS/export/$1 -f
+    RewriteRule ^([A-Za-z0-9._-]+\.php)$ export/$1 [L,QSA]
+
+    # 2) A relative redirect/link emitted from inside a subfolder
+    #    (e.g. pages/x.php sends "Location: index.php" -> pages/index.php).
+    #    Bounce it back to the app root so rule 1 can re-dispatch it.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(?:pages|api|export)/([A-Za-z0-9._-]+\.php)$ /Stock_LS/$1 [L,QSA]
+</IfModule>
