@@ -13,15 +13,28 @@ desktop.ini
 config.php
 config/database.php
 .env
+conn/db1.php
+phpinfo.php
 
 # === Logs ===
 *.log
 error_log
 
-# === Uploaded files / user content (ຖ້າບໍ່ຢາກໃຫ້ຮູບອັບໂຫລດເຂົ້າ Git) ===
-# ຍົກເລີກຄອມເມັນແຖວລຸ່ມນີ້ ຖ້າຕ້ອງການບໍ່ໃຫ້ Git ຕິດຕາມໂຟນເດີຮູບພາບ
-# picture/uploads/
-# uploads/
+# === Uploaded files / user content (ຮູບທີ່ user ອັບໂຫລດ - ບໍ່ຄວນເຂົ້າ Git) ===
+picture/uploads/
+picture/uploads - Copy/
+uploads/
+
+# === XAMPP default dashboard (ບໍ່ກ່ຽວກັບ project) ===
+dashboard/
+
+# === Duplicate / backup ໄຟລ໌ (ເຊັ່ນ "index - Old.php", "upload - new.php", "x - Copy.php") ===
+* - Old.*
+* - new.*
+* - Copy.*
+* - Copy (*).*
+*-Old.*
+*-Copy.*
 
 # === Composer / vendor (ຖ້າໃຊ້ Composer) ===
 vendor/
