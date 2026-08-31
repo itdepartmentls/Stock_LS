@@ -82,35 +82,8 @@ function getItemImageUrl($itemCode, $imageByItemCode, $uploadsBaseDir, $uploadsB
 
 	<!-- Core theme CSS (includes Bootstrap)-->
 
-	<style>
-		.bs-example {
-			margin: 20px;
-		}
 
-		.circle {
-			border-radius: 14px;
-		}
-	</style>
-
-	<style type="text/css">
-		body,
-		td,
-		th {
-			font-family: "Phetsarath OT";
-		}
-
-		.navbarr {
-			position: fixed;
-		}
-
-		.trr {
-			background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-		}
-
-		.trrr {
-			background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-		}
-	</style>
+	<link rel="stylesheet" href="css/pages/DataRe.css">
 
 	<table class="table table-hover circle">
 		<thead>

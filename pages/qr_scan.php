@@ -92,28 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QR Login Scanner</title>
-<style>
-  :root { --bg:#0f172a; --card:#1e293b; --accent:#38bdf8; --ok:#22c55e; --err:#ef4444; --txt:#e2e8f0; --muted:#94a3b8; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
-         background:var(--bg); color:var(--txt); min-height:100vh; display:flex;
-         align-items:center; justify-content:center; padding:20px; }
-  .card { background:var(--card); width:100%; max-width:480px; border-radius:16px;
-          padding:20px; box-shadow:0 10px 30px rgba(0,0,0,.35); text-align:center; }
-  h1 { font-size:1.15rem; margin:0 0 4px; }
-  .sub { color:var(--muted); font-size:.82rem; margin-bottom:14px; }
-  #video { width:100%; max-height:340px; background:#000; border-radius:12px; transform:scaleX(-1); }
-  #canvas { display:none; }
-  .status { margin:12px 0 6px; font-size:.9rem; min-height:1.3em; }
-  .status.err { color:var(--err); }
-  .status.ok { color:var(--ok); }
-  .manual { margin-top:14px; border-top:1px solid #334155; padding-top:14px; }
-  .manual input { width:100%; padding:10px 12px; border-radius:10px; border:1px solid #334155;
-                  background:#0f172a; color:var(--txt); font-size:.9rem; margin-bottom:8px; }
-  .manual button { width:100%; padding:11px; border:none; border-radius:10px; font-weight:600;
-                   background:var(--accent); color:#06283d; cursor:pointer; }
-  .hint { color:var(--muted); font-size:.72rem; margin-top:10px; }
-</style>
+<link rel="stylesheet" href="css/pages/qr_scan.css">
 </head>
 <body>
   <div class="card">

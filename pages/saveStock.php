@@ -10,13 +10,7 @@ if ($_SESSION["user"] == "") {
 
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
-<style type="text/css">
-	body,
-	td,
-	th {
-		font-family: "Phetsarath OT";
-	}
-</style>
+<link rel="stylesheet" href="css/pages/saveStock.css">
 <?php
 
 date_default_timezone_set('Asia/Bangkok');

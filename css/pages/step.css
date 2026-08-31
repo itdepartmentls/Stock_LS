@@ -1,0 +1,10 @@
+/* Extracted from pages/step.php */
+    body,
+    td,
+    th {
+        font-family: "Phetsarath OT";
+    }
+
+    .right {
+        float: right;
+    }

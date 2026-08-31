@@ -27,40 +27,7 @@ if ($_SESSION["user"] == "" or $_SESSION["iduser"] == "") {
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: "Phetsarath OT";
-        }
-
-        .navbarr {
-
-
-            position: fixed;
-
-        }
-
-        .buttonright {
-            float: right;
-        }
-
-        .buttonleft {
-            float: left;
-        }
-
-        .cooloorr {
-            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-        }
-
-        .right {
-            float: right;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="css/pages/allstockcenter.css">
 
 
 </head>

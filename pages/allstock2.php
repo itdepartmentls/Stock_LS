@@ -58,37 +58,7 @@ function getStockImage($itemCode, $imageMap, $pictureDir, $pictureUrl, $fallback
 
     <title>ສາງອຸປະກອນ</title>
 
-    <style type="text/css">
-        .cooloorr {
-            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-        }
-
-        .item-details {
-            line-height: 1.45;
-        }
-
-        .item-details .item-title {
-            font-size: 15px;
-            margin-bottom: 2px;
-        }
-
-        .item-details .item-line {
-            font-size: 13px;
-        }
-
-        .item-details i {
-            width: 18px;
-            color: #111;
-        }
-
-        .legacy-item-details {
-            display: none;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="css/pages/allstock2.css">
 </head>
 
 <body>

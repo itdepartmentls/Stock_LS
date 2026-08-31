@@ -21,17 +21,7 @@ if ($_SESSION["user"] == "") {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/all.min.css">
 </head>
-<style type="text/css">
-    body,
-    td,
-    th {
-        font-family: "Phetsarath OT";
-    }
-
-    .right {
-        float: right;
-    }
-</style>
+<link rel="stylesheet" href="css/pages/step.css">
 <?php
 date_default_timezone_set("Asia/Bangkok");
 $idd = $_REQUEST['id'] ?? '';

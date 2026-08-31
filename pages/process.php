@@ -29,17 +29,7 @@ if ($_SESSION["user"] == "" ) {
 	<!-- Demo stylesheet -->
 
 </head>
-<style type="text/css">
-	body,
-	td,
-	th {
-		font-family: "Phetsarath OT";
-	}
-
-	.right {
-		float: right;
-	}
-</style>
+<link rel="stylesheet" href="css/pages/process.css">
 
 <body>
 	<?php

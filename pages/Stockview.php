@@ -20,28 +20,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
-<style type="text/css">
-	body,
-	td,
-	th {
-		font-family: "Phetsarath OT";
-	}
-
-	.navbarr {
-
-
-		position: fixed;
-
-	}
-
-	.buttonright {
-		float: right;
-	}
-
-	.cooloorr {
-		background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-	}
-</style>
+<link rel="stylesheet" href="css/pages/Stockview.css">
 <?php
 if ($_SESSION["iduser"] == "404" or $_SESSION["iduser"] == "30" or $_SESSION["iduser"] == "194" or $_SESSION["iduser"] == "793" or $_SESSION["iduser"] == '41' or $_SESSION["iduser"] == '378' or $_SESSION["iduser"] == '387' or $_SESSION["iduser"] == '514' or $_SESSION["iduser"] == '423' or $_SESSION["iduser"] == '166' or $_SESSION["iduser"] == '167' or $_SESSION["iduser"] == '168' or $_SESSION["iduser"] == '624' or $_SESSION["iduser"] == '190' or $_SESSION["iduser"] == '197' or $_SESSION["iduser"] == '816' or $_SESSION["iduser"] == '835' or $_SESSION["iduser"] == '836' or $_SESSION["iduser"] == '837') {
 

@@ -29,17 +29,7 @@
       <!-- Demo stylesheet -->
 
   </head>
-  <style type="text/css">
-      body,
-      td,
-      th {
-          font-family: "Phetsarath OT";
-      }
-
-      .right {
-          float: right;
-      }
-  </style>
+  <link rel="stylesheet" href="css/pages/action.css">
   <?php
     if (isset($_POST["TMDUPDate"])) {
         date_default_timezone_set("Asia/Bangkok");

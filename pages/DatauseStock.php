@@ -44,38 +44,8 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
       }
     });
   </script>
-  <style>
-    .bs-example {
-      margin: 20px;
-    }
-  </style>
 
-  <style type="text/css">
-    body,
-    td,
-    th {
-      font-family: "Phetsarath OT";
-    }
-
-    .navbarr {
-
-
-      position: fixed;
-
-    }
-
-    .circle {
-
-
-      border-radius: 14px;
-
-    }
-
-    .trcolor {
-      background-image: linear-gradient(to top, #b3ffab 0%, #12fff7 100%);
-
-    }
-  </style>
+  <link rel="stylesheet" href="css/pages/DatauseStock.css">
   <?php
   $Province = $_SESSION["Namepro"];
 

@@ -42,28 +42,7 @@ while ($row = $res->fetch_assoc()) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>User QR Badges</title>
-<style>
-  body { font-family: system-ui, "Segoe UI", Arial, sans-serif; background:#f1f5f9;
-         color:#0f172a; margin:0; padding:20px; }
-  h1 { font-size:1.2rem; }
-  .bar { display:flex; gap:12px; align-items:center; margin-bottom:16px; flex-wrap:wrap; }
-  .bar a, .bar button { text-decoration:none; background:#0ea5e9; color:#fff; border:none;
-        padding:9px 14px; border-radius:8px; font-size:.85rem; cursor:pointer; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:16px; }
-  .badge { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px;
-           text-align:center; box-shadow:0 2px 8px rgba(0,0,0,.05); }
-  .badge .name { font-weight:700; font-size:1rem; }
-  .badge .meta { color:#475569; font-size:.78rem; margin:2px 0 10px; word-break:break-all; }
-  .badge .qr { display:inline-block; padding:8px; background:#fff; border:1px solid #e2e8f0; border-radius:8px; }
-  .warn { background:#fef3c7; color:#92400e; padding:10px 14px; border-radius:8px;
-          font-size:.8rem; margin-bottom:16px; max-width:680px; }
-  @media print {
-    body { background:#fff; padding:0; }
-    .bar, .warn { display:none; }
-    .grid { gap:10px; }
-    .badge { box-shadow:none; border:1px solid #cbd5e1; page-break-inside:avoid; }
-  }
-</style>
+<link rel="stylesheet" href="css/pages/qr_badges.css">
 </head>
 <body>
   <h1>User QR Badges</h1>

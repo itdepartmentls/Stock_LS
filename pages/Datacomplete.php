@@ -19,11 +19,7 @@ if ( $_SESSION["user"]=="" or  $_SESSION["Namepro"]=="" or $_SESSION["iduser"]==
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-	<style type="text/css">
-body,td,th {
-	font-family: "Phetsarath OT";
-}		
-    </style>
+	<link rel="stylesheet" href="css/pages/Datacomplete.css">
 
 <body>
 	

@@ -50,15 +50,13 @@ function render_head(bool $withExtraStyles = false): void
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pages/ReporDataTotal.css">
+    <?php if ($withExtraStyles): ?>
     <style>
-        .bs-example { margin: 20px; }
-        body, td, th { font-family: "Phetsarath OT"; }
-        .navbarr { position: fixed; }
-        <?php if ($withExtraStyles): ?>
         .circle { border-radius: 14px; }
         .BG { background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%); }
-        <?php endif; ?>
     </style>
+    <?php endif; ?>
 </head>
 <body>
 <?php
