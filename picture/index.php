@@ -183,7 +183,7 @@ $map = loadMap($mapFile);
   <title>Upload Images Stock</title>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link type="logo_png" rel="icon" href="favicons.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
 
   <!-- ===== Font Awesome 6 ===== -->
     <link rel="stylesheet" href="../css/vendor/fontawesome/all.min.css">
@@ -753,7 +753,7 @@ $map = loadMap($mapFile);
     });
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

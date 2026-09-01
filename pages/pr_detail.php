@@ -299,7 +299,7 @@ $companyAddress = $factoryAddresses[$factoryKey]['address'];
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="image/favicons.png">
     <title>ລາຍການຂໍຊື້ PR | <?php echo e($prNumber); ?></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 
     <link rel="stylesheet" href="css/pages/pr_detail.css">

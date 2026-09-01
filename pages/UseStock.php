@@ -15,7 +15,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
     <link rel="shortcut icon" href="image/favicons.png">
 
     <!-- ===== Bootstrap 5 CSS ===== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
     <!-- ===== Font Awesome 6 ===== -->
@@ -28,7 +28,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- ===== Bootstrap 5 JS Bundle ===== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- ===== Select2 JS (ຫຼັງຈາກ jQuery) ===== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
@@ -44,7 +44,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
     <title>ນຳໃຊ້ອຸປະກອນ</title>
 
     <!-- Core theme CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/pages/UseStock.css">
 

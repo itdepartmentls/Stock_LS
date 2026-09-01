@@ -16,10 +16,10 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -33,7 +33,7 @@ if ($_SESSION["user"] == "" or  $_SESSION["Namepro"] == "" or $_SESSION["iduser"
 	<!-- Favicon-->
 
 	<!-- Core theme CSS (includes Bootstrap)-->
-	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/app.css" rel="stylesheet" />
 	<style type="text/css">
 		body,
 		td,
@@ -80,7 +80,7 @@ WHERE a.S_Status = '1'
 		<div class="border-end bg-white" id="sidebar-wrapper">
 			<div class="sidebar-heading border-bottom bg-light"><img src="image/logoETL.jpg" class="img-fluid" alt="ETL" width="80">ລະບົບສາງ LS</div>
 			<div class="list-group list-group-flush">
-				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="Dasborad.php"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp; <strong>ຂໍເບິກອຸປະກອນ</strong> <span class="badge badge-pill badge-danger right" style="font-size: 15px;"><strong><?php echo ($row['cccount']); ?></strong></span></a>
+				<a class="list-group-item list-group-item-action list-group-item-light p-3" href="Dasborad.php"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp; <strong>ຂໍເບິກອຸປະກອນ</strong> <span class="badge rounded-pill text-bg-danger right" style="font-size: 15px;"><strong><?php echo ($row['cccount']); ?></strong></span></a>
 				<?php
 				if ($_SESSION["iduser"] <> "204") {
 
@@ -532,7 +532,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 					<?php } ?>
 
 
-					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+					<script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 					<!-- Core theme JS-->
 					<script src="js/scripts.js"></script>
 				</body>

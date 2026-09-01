@@ -14,10 +14,10 @@ if ($_SESSION["user"] == "" ) {
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="image/logoETL.jpg">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -100,21 +100,21 @@ WHERE stock.Items LIKE '$Name_Come'  ";
 		<?php if ($S_Status == 'ສ້ອມແປງ') { ?>
 			<ul class="nav nav-tabs row" role="tablist">
 				<li class="nav-item col-sm-2">
-					<a class="nav-link active btn-success" data-toggle="tab" href="#home">1 <?php echo $row['Cat_Province'] ?></a>
+					<a class="nav-link active btn-success" data-bs-toggle="tab" href="#home">1 <?php echo $row['Cat_Province'] ?></a>
 				</li><img class="right" src="image/message.gif" style="width:40px;height:40px;">
 				<li class="nav-item col-sm-2">
-					<a class="nav-link <?php echo $theme ?>" data-toggle="tab" href="#menu1">2 <?php if ($row['User_TMD'] <> '') {
+					<a class="nav-link <?php echo $theme ?>" data-bs-toggle="tab" href="#menu1">2 <?php if ($row['User_TMD'] <> '') {
 																									echo "ພະແນກຄຸ້ມຄອງເຕັກນິກ";
 																								} else {
 																									echo "ຍັງບໍ່ມີການຮັບຮູ້";
 																								} ?></a>
 				</li><img class="right" src="image/shipping.gif" style="width:40px;height:40px;">
 				<li class="nav-item col-sm-2">
-					<a class="nav-link <?php echo $themefix ?>" data-toggle="tab" href="#menu2">3 ກວດສອບ</a>
+					<a class="nav-link <?php echo $themefix ?>" data-bs-toggle="tab" href="#menu2">3 ກວດສອບ</a>
 				</li><img class="right" src="image/repair-tools.gif" style="width:40px;height:40px;">
 
 				<?php if ($row['STT_Fix'] == 'ໃຊ້ໄດ້ປົກກະຕິ') { ?><li class="nav-item col-sm-2">
-						<a class="nav-link <?php echo $theme ?>" data-toggle="tab" href="#menu3">4 ຈັດສົ່ງ</a>
+						<a class="nav-link <?php echo $theme ?>" data-bs-toggle="tab" href="#menu3">4 ຈັດສົ່ງ</a>
 					</li><img class="right" src="image/crane.gif" style="width:40px;height:40px;"> <?php } ?>
 			</ul>
 
@@ -418,10 +418,10 @@ VALUES ('" . $rowinserttmd["Items"] . "','" . $rowinserttmd["Item_code"] . "','"
 
 		<ul class="nav nav-tabs row" role="tablist">
 			<li class="nav-item col-sm-2">
-				<a class="nav-link active btn-success" data-toggle="tab" href="#home">1 <?php echo $row['Cat_Province'] ?></a>
+				<a class="nav-link active btn-success" data-bs-toggle="tab" href="#home">1 <?php echo $row['Cat_Province'] ?></a>
 			</li><img class="right" src="image/message.gif" style="width:40px;height:40px;">
 			<li class="nav-item col-sm-2">
-				<a class="nav-link <?php echo $theme ?>" data-toggle="tab" href="#menu1">2 <?php if ($row['User_TMD'] <> '') {
+				<a class="nav-link <?php echo $theme ?>" data-bs-toggle="tab" href="#menu1">2 <?php if ($row['User_TMD'] <> '') {
 																								echo "ພະແນກຄຸ້ມຄອງເຕັກນິກ";
 																							} else {
 																								echo "ຍັງບໍ່ມີການຮັບຮູ້";
@@ -429,7 +429,7 @@ VALUES ('" . $rowinserttmd["Items"] . "','" . $rowinserttmd["Item_code"] . "','"
 			</li><img class="right" src="image/shipping.gif" style="width:40px;height:40px;">
 
 			<?php if ($row['Date_TMD'] <> '') { ?><li class="nav-item col-sm-2">
-					<a class="nav-link <?php echo $theme ?>" data-toggle="tab" href="#menu3">3 ຈັດສົ່ງ</a>
+					<a class="nav-link <?php echo $theme ?>" data-bs-toggle="tab" href="#menu3">3 ຈັດສົ່ງ</a>
 				</li><img class="right" src="image/crane.gif" style="width:40px;height:40px;"> <?php } ?>
 		</ul>
 
@@ -506,10 +506,10 @@ VALUES ('" . $rowinserttmd["Items"] . "','" . $rowinserttmd["Item_code"] . "','"
 
 		<ul class="nav nav-tabs row" role="tablist">
 			<li class="nav-item col-sm-2">
-				<a class="nav-link active btn-success" data-toggle="tab" href="#home">1 <?php echo $row['Cat_Province'] ?></a>
+				<a class="nav-link active btn-success" data-bs-toggle="tab" href="#home">1 <?php echo $row['Cat_Province'] ?></a>
 			</li><img class="right" src="image/message.gif" style="width:40px;height:40px;">
 			<li class="nav-item col-sm-2">
-				<a class="nav-link <?php echo $theme ?>" data-toggle="tab" href="#menu1">2 <?php if ($row['User_TMD'] <> '') {
+				<a class="nav-link <?php echo $theme ?>" data-bs-toggle="tab" href="#menu1">2 <?php if ($row['User_TMD'] <> '') {
 																								echo "ພະແນກຄຸ້ມຄອງເຕັກນິກ";
 																							} else {
 																								echo "ຍັງບໍ່ມີການຮັບຮູ້";
@@ -517,7 +517,7 @@ VALUES ('" . $rowinserttmd["Items"] . "','" . $rowinserttmd["Item_code"] . "','"
 			</li><img class="right" src="image/shipping.gif" style="width:40px;height:40px;">
 
 			<?php if ($row['Date_TMD'] <> '') { ?><li class="nav-item col-sm-2">
-					<a class="nav-link <?php echo $theme ?>" data-toggle="tab" href="#menu3">3 ຈັດສົ່ງ</a>
+					<a class="nav-link <?php echo $theme ?>" data-bs-toggle="tab" href="#menu3">3 ຈັດສົ່ງ</a>
 				</li><img class="right" src="image/crane.gif" style="width:40px;height:40px;"> <?php } ?>
 		</ul>
 

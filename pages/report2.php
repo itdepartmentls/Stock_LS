@@ -16,10 +16,10 @@ if ($_SESSION["user"] == "") {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -33,7 +33,7 @@ if ($_SESSION["user"] == "") {
     <!-- Favicon-->
 
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/pages/report2.css">
     <script type="text/javascript">
         $(document).ready(function() {
@@ -128,7 +128,7 @@ WHERE a.User_TMD <> '' and Date_Goto is null
             <div class="sidebar-heading border-bottom bg-light"><img src="image/logoETL.jpg" class="img-fluid" alt="ETL" width="80">ລະບົບສາງ LS</div>
             <div class="list-group list-group-flush">
 
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="center.php"><i class="fa-regular fa-location-check"></i>&nbsp; <strong>ຕິດຕາມ ອຸປະກອນ</strong><span class="badge badge-pill badge-danger right" style="font-size: 15px;"><strong><?php echo ($row['cccount']); ?> </strong></span></a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="center.php"><i class="fa-regular fa-location-check"></i>&nbsp; <strong>ຕິດຕາມ ອຸປະກອນ</strong><span class="badge rounded-pill text-bg-danger right" style="font-size: 15px;"><strong><?php echo ($row['cccount']); ?> </strong></span></a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="stock2.php"><i class="fa-solid fa-cubes-stacked"></i>&nbsp; <strong>ສາງອຸປະກອນ</strong></a>
 
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Report2.php"><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp; <strong>Report</strong></a>
@@ -493,7 +493,7 @@ order by request.Province ;
 
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 </body>
