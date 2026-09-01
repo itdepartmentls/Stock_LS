@@ -20,7 +20,13 @@
             float: left;
         }
 
-        .cooloorr {
+        /* Bootstrap 5.3 paints every .table cell with an opaque background,
+           which covers a gradient set only on the <tr>. Put the gradient on
+           the header cells themselves so it shows regardless. */
+        .cooloorr,
+        .cooloorr > th,
+        .cooloorr > td {
+            background-color: transparent;
             background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
         }
 
