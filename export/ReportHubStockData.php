@@ -574,7 +574,7 @@ LIMIT 5;";
 					<script src="js/amcharts.js"></script>
 					<script src="js/serial.js"></script>
 					<script src="js/light.js"></script>
-					<link rel="stylesheet" href="js/export.css" type="text/css" media="all" />
+					<link rel="stylesheet" href="css/pages/export.css" type="text/css" media="all" />
 					<script>
 						var chart = AmCharts.makeChart("chartdiv", {
 							"type": "serial",

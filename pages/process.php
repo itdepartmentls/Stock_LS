@@ -26,7 +26,8 @@ if ($_SESSION["user"] == "" ) {
 	<link rel="stylesheet" href="css/vendor/fontawesome/all.min.css">
 	<title>ການດຳເນີນການ</title>
 
-	<!-- Demo stylesheet -->
+	<!-- jquery-steps wizard stylesheet -->
+	<link rel="stylesheet" href="css/vendor/jquery-steps/jquery-steps.css">
 
 </head>
 <link rel="stylesheet" href="css/pages/process.css">
@@ -888,7 +889,7 @@ VALUES ('" . $rowinserttmd["Items"] . "','" . $rowinserttmd["Item_code"] . "','"
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-	<script src="js/jquery-steps.js"></script>
+	<script src="js/vendor/jquery-steps/jquery-steps.js"></script>
 	<script>
 		$('#demo').steps({
 			onFinish: function() {
