@@ -181,7 +181,11 @@ $pendingCount = getPendingTackingCount($conn, trim($_SESSION["factory"] ?? ''));
                     <iframe class="circle" src="DataRe.php" name="DataRe" height="550px" width="100%" frameborder="0" scrolling="no" onload="resizeIframe(this)">
                     </iframe>
                 <?php else: ?>
-                    <iframe class="circle" src="DataReAdmin.php" name="DataReAdmin" height="550px" width="100%" frameborder="0" scrolling="no" onload="resizeIframe(this)">
+                    <?php
+                    // ເງິນແກ້ວ (user ID 215) ໃຊ້ໜ້າ "ຈັດຊື້" (DataReAdmin_Sale.php) ແທນໜ້າ admin ປົກກະຕິ
+                    $reAdminSrc = (($_SESSION["iduser"] ?? '') == '215') ? 'DataReAdmin_Sale.php' : 'DataReAdmin.php';
+                    ?>
+                    <iframe class="circle" src="<?= $reAdminSrc ?>" name="DataReAdmin" height="550px" width="100%" frameborder="0" scrolling="no" onload="resizeIframe(this)">
                     </iframe>
                 <?php endif; ?>
 
