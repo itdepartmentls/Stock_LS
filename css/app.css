@@ -45,3 +45,14 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+
+/* ============================================================
+   Bootstrap 5.3 paints every .table cell with an opaque
+   --bs-table-bg (var(--bs-body-bg)), which hides the legacy
+   <tr bgcolor="..."> / <td bgcolor="..."> row highlights the
+   stock pages use to flag low-stock items. Restore the pre-5.3
+   behaviour (transparent cells) so those attributes show again.
+   ============================================================ */
+.table {
+  --bs-table-bg: transparent;
+}

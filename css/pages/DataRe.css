@@ -24,3 +24,9 @@
 		.trrr {
 			background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
 		}
+
+		/* Bootstrap 5.3 paints .table cells opaque, hiding legacy
+		   <tr bgcolor> highlights - restore pre-5.3 transparent cells */
+		.table {
+			--bs-table-bg: transparent;
+		}
