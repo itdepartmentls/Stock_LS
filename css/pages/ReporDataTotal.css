@@ -1,8 +1,0 @@
-/* Extracted from pages/ReporDataTotal.php (conditional rules stay inline) */
-.bs-example { margin: 20px; }
-body, td, th { font-family: "Phetsarath OT"; }
-.navbarr { position: fixed; }
-
-/* Bootstrap 5.3 paints .table cells opaque, hiding legacy <tr bgcolor>
-   highlights - restore pre-5.3 transparent cells */
-.table { --bs-table-bg: transparent; }

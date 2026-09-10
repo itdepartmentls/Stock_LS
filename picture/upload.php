@@ -14,7 +14,7 @@ $allowedTypes = array('image/jpeg', 'image/png', 'image/gif', 'image/webp', 'ima
 $maxSize = 10 * 1024 * 1024; // 10MB (ຕ້ອງບໍ່ເກີນ upload_max_filesize ໃນ php.ini)
 
 echo '<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&family=Poppins&display=swap" rel="stylesheet">';
-echo '<link rel="stylesheet" href="../css/vendor/bootstrap/bootstrap.min.css">';
+echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">';
 echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
 echo '<div class="container mt-4">';
 echo '<style>

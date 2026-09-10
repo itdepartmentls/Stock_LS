@@ -8,7 +8,7 @@ session_unset();
 session_destroy();
 session_start();
 
-require_once __DIR__ . '/includes/conn.php';
+require_once __DIR__ . '/conn.php';
 
 // =========================================================
 // ປ້ອງກັນ Open Redirect: ຍອມຮັບສະເພາະ path ພາຍໃນເວັບ

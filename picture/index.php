@@ -183,15 +183,15 @@ $map = loadMap($mapFile);
   <title>Upload Images Stock</title>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link type="logo_png" rel="icon" href="favicons.png">
-  <link href="../css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- ===== Font Awesome 6 ===== -->
-    <link rel="stylesheet" href="../css/vendor/fontawesome/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
   <!-- icons ເພີ່ມເຕີມ -->
-	<link rel="stylesheet" href="../css/vendor/uicons/uicons-solid-rounded.css">
-	<link rel="stylesheet" href="../css/vendor/uicons/uicons-regular-rounded.css">
-	<link rel="stylesheet" href="../css/vendor/uicons/uicons-regular-straight.css">
+	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
 
   <style>
     body {
@@ -753,7 +753,7 @@ $map = loadMap($mapFile);
     });
   </script>
 
-  <script src="../js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
